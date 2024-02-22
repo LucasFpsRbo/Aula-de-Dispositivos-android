@@ -1,0 +1,47 @@
+import {Text,View,StyleSheet} from 'react-native'
+
+export default function App(){
+  return(
+    <View style={estilos.janela}>
+      <Text style={estilos.titulo}> APP Calculadora</Text>
+      <View style={estilos.janela_botao}>
+        <View style={estilos.quadrado}></View>
+        <View style={estilos.quadrado}></View>
+        <View style={estilos.quadrado}></View>
+        <View style={estilos.quadrado}></View>
+        <View style={estilos.quadrado}></View>
+        <View style={estilos.quadrado}></View>
+      </View>
+    </View>
+  )
+}
+
+const estilos = StyleSheet.create({
+  janela:{
+    flex:1,
+    backgroundColor: 'blue',
+    margin:2
+  },
+  titulo:{
+    fontSize:24,
+    color: 'white',
+    textAlign: 'center',
+    marginTop:10,
+    marginBottom:10
+  },
+  janela_botao:{
+    display: 'flex',
+    margin:5,
+    flex:1,
+    backgroundColor: 'grey',
+    flexDirection: 'row'
+  },
+  quadrado:{
+    width:100,
+    height:100,
+    backgroundColor: 'red',
+    margin:5,
+    borderRadius: 8,
+    display: 'block'
+  }
+})
